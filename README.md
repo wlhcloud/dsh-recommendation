@@ -1,8 +1,20 @@
 # dsh-recommendation
 
+English | [简体中文](README.zh.md)
+
 A privacy-aware personalized question recommendation service for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) and Cordis.
 
 It records bounded recent behavior, extracts semantic interests with an OpenAI-compatible model, and generates home-page suggestions or follow-up questions. It does **not** answer the user's question, call business tools, expose HTTP routes, or depend on a particular MCP server.
+
+## Screenshots
+
+### Home-page suggestions
+
+![Personalized home-page suggestions](docs/images/home-recommendations.png)
+
+### Turn-aware follow-up questions
+
+![Follow-up questions generated after an answer](docs/images/follow-up-recommendations.png)
 
 ## Features
 
