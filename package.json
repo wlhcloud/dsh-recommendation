@@ -1,0 +1,57 @@
+{
+  "name": "dsh-recommendation",
+  "version": "0.1.0",
+  "description": "Privacy-aware personalized question recommendations for DeepSeek Harness",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LIFECYCLE.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --import tsx/esm --test test/*.test.ts",
+    "check": "npm run build && npm test",
+    "prepack": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wlhcloud/dsh-recommendation.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wlhcloud/dsh-recommendation/issues"
+  },
+  "homepage": "https://github.com/wlhcloud/dsh-recommendation#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "cordis",
+    "recommendation",
+    "personalization",
+    "follow-up-questions"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1"
+  },
+  "devDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@types/node": "^22.0.0",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  }
+}
